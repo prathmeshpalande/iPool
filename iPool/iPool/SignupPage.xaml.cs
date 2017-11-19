@@ -14,6 +14,7 @@ namespace iPool
         public SignupPage()
         {
             InitializeComponent();
+            Title = "iPool - Sign Up";
         }
 
         private async void ButtonSignup_Clicked(object sender, EventArgs e)
@@ -48,7 +49,7 @@ namespace iPool
                 case "1":
                     {
                         LabelSignup.Text = "Success: Signed Up!";
-                        Navigation.InsertPageBefore(new MainPage(EntryUsername.Text.ToString()), Navigation.NavigationStack[0]);
+                        Navigation.InsertPageBefore(new HomePage(EntryUsername.Text.ToString()), Navigation.NavigationStack[0]);
                         Navigation.PopToRootAsync();
 
                         break;

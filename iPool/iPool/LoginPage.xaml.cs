@@ -16,6 +16,7 @@ namespace iPool
         public LoginPage()
         {
             InitializeComponent();
+            Title = "iPool - Login";
         }
 
         private async void ButtonLogin_Clicked(object sender, EventArgs e)

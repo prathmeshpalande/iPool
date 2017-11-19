@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using Plugin.Geolocator;
+using Plugin.Geolocator.Abstractions;
+using System;
 using System.Threading.Tasks;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Maps;
 using Xamarin.Forms.Xaml;
@@ -23,18 +21,25 @@ namespace iPool
         {
             InitializeComponent();
             this.currentUser = currentUser;
-            /*var map = new Map(
-            MapSpan.FromCenterAndRadius(
-                    new Position(37, -122), Distance.FromMiles(0.3)))
-            {
-                IsShowingUser = true,
-                HeightRequest = 100,
-                WidthRequest = 960,
-                VerticalOptions = LayoutOptions.FillAndExpand
-            };
-            var stack = new StackLayout { Spacing = 0 };
-            stack.Children.Add(map);
-            Content = stack;*/
+            Title = "iPool - Home";
+            setCurrentLocationOnMap();
         }
-	}
+        public async Task setCurrentLocationOnMap()
+        {
+            IGeolocator locator = CrossGeolocator.Current;
+            locator.DesiredAccuracy = 50;
+            Plugin.Geolocator.Abstractions.Position position = await locator.GetPositionAsync();
+            iPoolMap.MoveToRegion( MapSpan.FromCenterAndRadius( new Xamarin.Forms.Maps.Position(position.Latitude, position.Longitude), Distance.FromMiles(1)));
+        }
+
+        private void EntryFrom_Focused(object sender, FocusEventArgs e)
+        {
+            Navigation.PushAsync(new PlaceSearchPage("from"));
+        }
+
+        private void EntryTo_Focused(object sender, FocusEventArgs e)
+        {
+            Navigation.PushAsync(new PlaceSearchPage("to"));
+        }
+    }
 }

@@ -13,7 +13,6 @@ namespace iPool
         public App()
         {
             InitializeComponent();
-
             MainPage = new NavigationPage(new LoginPage());
         }
 
