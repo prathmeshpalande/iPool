@@ -5,10 +5,8 @@ D:\Softwares\Visual Studio Projects\iPool\iPool\iPool\bin\Debug\Xamarin.Forms.Pl
 D:\Softwares\Visual Studio Projects\iPool\iPool\iPool\bin\Debug\Xamarin.Forms.Xaml.dll
 D:\Softwares\Visual Studio Projects\iPool\iPool\iPool\bin\Debug\Xamarin.Forms.Core.pdb
 D:\Softwares\Visual Studio Projects\iPool\iPool\iPool\bin\Debug\Xamarin.Forms.Core.xml
-D:\Softwares\Visual Studio Projects\iPool\iPool\iPool\bin\Debug\Xamarin.Forms.Platform.pdb
 D:\Softwares\Visual Studio Projects\iPool\iPool\iPool\bin\Debug\Xamarin.Forms.Xaml.pdb
 D:\Softwares\Visual Studio Projects\iPool\iPool\iPool\bin\Debug\Xamarin.Forms.Xaml.xml
-D:\Softwares\Visual Studio Projects\iPool\iPool\iPool\obj\Debug\iPool.csprojResolveAssemblyReference.cache
 D:\Softwares\Visual Studio Projects\iPool\iPool\iPool\obj\Debug\iPool.csproj.CoreCompileInputs.cache
 D:\Softwares\Visual Studio Projects\iPool\iPool\iPool\obj\Debug\iPool.MainPage.xaml.g.cs
 D:\Softwares\Visual Studio Projects\iPool\iPool\iPool\obj\Debug\iPool.App.xaml.g.cs
@@ -16,3 +14,7 @@ D:\Softwares\Visual Studio Projects\iPool\iPool\iPool\obj\Debug\iPool.dll
 D:\Softwares\Visual Studio Projects\iPool\iPool\iPool\obj\Debug\iPool.pdb
 D:\Softwares\Visual Studio Projects\iPool\iPool\iPool\obj\Debug\iPool.LoginPage.xaml.g.cs
 D:\Softwares\Visual Studio Projects\iPool\iPool\iPool\obj\Debug\iPool.SignupPage.xaml.g.cs
+D:\Softwares\Visual Studio Projects\iPool\iPool\iPool\obj\Debug\iPool.HomePage.xaml.g.cs
+D:\Softwares\Visual Studio Projects\iPool\iPool\iPool\bin\Debug\Xamarin.Forms.Maps.dll
+D:\Softwares\Visual Studio Projects\iPool\iPool\iPool\bin\Debug\Xamarin.Forms.Maps.xml
+D:\Softwares\Visual Studio Projects\iPool\iPool\iPool\obj\Debug\iPool.csprojResolveAssemblyReference.cache

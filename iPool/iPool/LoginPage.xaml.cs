@@ -51,7 +51,8 @@ namespace iPool
                     {
                         LabelLogin.TextColor = Color.Green;
                         LabelLogin.Text = "Success: Logged In!";
-                        Navigation.InsertPageBefore(new MainPage(EntryUsername.Text.ToString()), Navigation.NavigationStack[0]);
+                        //Navigation.InsertPageBefore(new MainPage(EntryUsername.Text.ToString()), Navigation.NavigationStack[0]);
+                        Navigation.InsertPageBefore(new HomePage(EntryUsername.Text.ToString()), Navigation.NavigationStack[0]);
                         Navigation.PopToRootAsync();
                         break;
                     }
